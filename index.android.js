@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { AppRegistry, Image } from 'react-native';
 import { StackNavigator, TabNavigator } from 'react-navigation'
-import { PatientList, MainComponent, DashboardComponent, RegisterComponent, SearchByDateComponent, SearchByNameComponent } from './src'
+import { PatientList, MainComponent, DashboardComponent, RegisterComponent } from './src'
 // import { CardSection, Button, Card } from './src/common'
 import { Container, Button, Text, Body, Footer, Header, Content, H1, Icon } from 'native-base'
 // import { Grid, Col } from 'react-native-easy-grid'
@@ -30,8 +30,6 @@ const SimpleApp = StackNavigator({
   Home: { screen: MainComponent },
   Dashboard: { screen: DashboardComponent },
   Reg: { screen: RegisterComponent },
-  SearchD: { screen: SearchByDateComponent },
-  SearchN: { screen: SearchByNameComponent },
   PatientList: { screen: PatientList }
 });
 
